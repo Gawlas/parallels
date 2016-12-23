@@ -1,6 +1,6 @@
 # parallels
 
-#rdw #psd_to_html #mobile #sass #js
+ #rdw #psd_to_html #mobile #sass #js
 
 **Podgląd:**
 
