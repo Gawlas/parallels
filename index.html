@@ -2,362 +2,758 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Parallels</title>
 
+  <!-- STYLES -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+  <link rel="stylesheet" href="lib/normalize.css">
+  <link rel="stylesheet" href="lib/bootstrap_grid.css">
+  <link rel="stylesheet" href="lib/font-awesome.css">
   <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
   <h1 class="sr-only">Parallels</h1>
 
   <!-- PAGE MAIN NAVIGATION -->
-  <section role="navigation">
-    <h2 class="sr-only">Navigation</h2>
+  <section id="js-nav" class="nav" role="navigation">
+    <div class="container">
+      <div class="row">
+        <h2 class="sr-only">Navigation</h2>
 
-    <!-- brand logo -->
-    <header>
-      <img src="img/logo.png" alt="">
-      <p>Parallels</p>
-    </header>
+        <!-- brand logo -->
+        <header class="nav--header">
+          <a href="#"><img class="nav--header-logo" src="img/logo.png" alt=""></a>
+          <p class="nav--header-brand">Parallels</p>
+        </header>
 
-    <!-- nav links -->
-    <nav>
-      <h3 class="sr-only">Page Navigation</h3>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
+        <!-- nav links -->
+        <button id="js-navMenuButton" class="nav--menu-button">Menu</button>
+        <nav id="js-navMenu" class="nav--navigation nav--navigation__hidden">
+          <h3 class="sr-only">Page Navigation</h3>
+          <ul class="nav--list">
+            <li><a class="nav--link" href="#">Home</a></li>
+            <li><a class="nav--link" href="#services">Services</a></li>
+            <li><a class="nav--link" href="#portfolio">Portfolio</a></li>
+            <li><a class="nav--link" href="#pricing">Pricing</a></li>
+            <li><a class="nav--link" href="#aboutus">About</a></li>
+            <li><a class="nav--link" href="#contactus">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
   </section>
 
   <!-- JUMBOTRON - PAGE MAIN HEADER -->
-  <header role="banner">
-    <h2 class="sr-only">Main Page Banner</h2>
-    <p>Welcome to Parallels</p>
-    <p>Clean Responsive Parallax Theme</p>
+  <header class="jumbotron" role="banner">
+    <div class="container jumbotron--container">
+      <div class="row">
+        <h2 class="sr-only">Main Page Banner</h2>
+        <div class="jumbotron--content">
+          <p class="jumbotron--primary-text">Welcome to Parallels</p>
+          <p class="jumbotron--secondary-text">Clean Responsive Parallax Theme</p>
+        </div>
+        <img class="jumbotron--icons" src="img/icons.png" alt="">
+      </div>
+    </div>
   </header>
 
   <!-- SERVICES -->
-  <section>
-    <h2>Our Services</h2>
-
-    <section>
-      <h3>Web Design</h3>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque eligendi illum maxime necessitatibus nisi
-        quisquam velit.
-      </p>
-    </section>
-    <section>
-      <h3>UI Design</h3>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium blanditiis distinctio dolores eos
-        magnam tempore vero?
-      </p>
-    </section>
-    <section>
-      <h3>Prototype</h3>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, harum molestiae perferendis provident quos
-        ut voluptas.
-      </p>
-    </section>
-    <section>
-      <h3>Photography</h3>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet animi cupiditate doloribus ducimus ipsum
-        nulla vero.
-      </p>
-    </section>
+  <section id="services">
+    <div class="container">
+      <div class="row">
+        <h2 class="heading-primary">Our Services</h2>
+      </div>
+      <div class="row services">
+        <section class="services--item col-sm-6 col-lg-3">
+          <img class="services--icon" src="img/icon1.png" alt="">
+          <h3 class="services--heading">Web Design</h3>
+          <p class="services--text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque eligendi illum maxime necessitatibus nisi
+            quisquam velit.
+          </p>
+        </section>
+        <section class="services--item col-sm-6 col-lg-3">
+          <img class="services--icon" src="img/icon2.png" alt="">
+          <h3 class="services--heading">UI Design</h3>
+          <p class="services--text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium blanditiis distinctio dolores eos
+            magnam tempore vero?
+          </p>
+        </section>
+        <section class="services--item col-sm-6 col-lg-3">
+          <img class="services--icon" src="img/icon3.png" alt="">
+          <h3 class="services--heading">Prototype</h3>
+          <p class="services--text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, harum molestiae perferendis provident
+            quos ut voluptas.
+          </p>
+        </section>
+        <section class="services--item col-sm-6 col-lg-3">
+          <img class="services--icon" src="img/icon4.png" alt="">
+          <h3 class="services--heading">Photography</h3>
+          <p class="services--text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet animi cupiditate doloribus ducimus ipsum
+            nulla vero.
+          </p>
+        </section>
+      </div>
+    </div>
   </section>
 
   <!-- PURCHASE THEME -->
-  <section>
+  <section id="purchase">
     <h2 class="sr-only">Purchase</h2>
-
-    <div>
-      <p>Do you like this clean theme?</p>
-      <button type="button" role="link">Purchase</button>
-      <button type="button" role="link">Follow</button>
+    <div id="banner01" class="banner">
+      <div class="container">
+        <div class="row">
+          <div class="banner--content">
+            <p class="banner--primary-text">Do you like this clean theme?</p>
+          </div>
+          <div class="btn--bay-section">
+            <a class="btn" href="#">Purchase</a>
+            <a class="btn btn-sec" href="#">Follow</a>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- PORTFOLIO -->
-  <section>
-    <h2>Portfolio</h2>
+  <section id="portfolio">
+    <div class="container">
+      <div class="row">
+        <h2 class="heading-primary">Portfolio</h2>
 
-    <!-- portfolio menu -->
-    <ul>
-      <li>
-        <button type="button">Web-Design</button>
-      </li>
-      <li>
-        <button type="button">Ui-Design</button>
-      </li>
-      <li>
-        <button type="button">Prototype</button>
-      </li>
-      <li>
-        <button type="button">Photography</button>
-      </li>
-    </ul>
+        <div id="portfolio01" class="portfolio">
+          <!-- portfolio menu -->
+          <div class="portfolio--menu">
+            <a class="btn portfolio--button js-filter-active" href="#pf-ct-01" data-filter-target="all">All</a>
+            <a class="btn portfolio--button" href="#pf-ct-01" data-filter-target="wd">Web-Design</a>
+            <a class="btn portfolio--button" href="#pf-ct-02" data-filter-target="ui">UI-Design</a>
+            <a class="btn portfolio--button" href="#pf-ct-03" data-filter-target="pr">Prototype</a>
+            <a class="btn portfolio--button" href="#pf-ct-04" data-filter-target="ph">Photography</a>
+          </div>
 
-    <!-- portfolio items -->
-    <ul>
-      <li><img src="" alt=""></li>
-      <li><img src="" alt=""></li>
-      <li><img src="" alt=""></li>
-      <li><img src="" alt=""></li>
-      <li><img src="" alt=""></li>
-      <li><img src="" alt=""></li>
-      <li><img src="" alt=""></li>
-      <li><img src="" alt=""></li>
-    </ul>
+          <!-- portfolio items -->
+          <div class="portfolio--items">
+            <div class="portfolio--item" data-filter="ph">
+              <img src="img/pf01.jpg" alt="">
+              <div class="portfolio--item-desc">
+                <strong class="portfolio--item-desc-title">Clean night sky</strong>
+                <strong class="portfolio--item-desc-category">photography </strong>
+                <div class="portfolio--item-adds">
+                  <div class="portfolio--item-ads-heart">
+                    <a href="#none"><i class="fa fa-heart-o" aria-hidden="true"></i></a> 34
+                  </div>
+                  <div class="portfolio--item-ads-comments">
+                    <a href="#none"><i class="fa fa-comment-o" aria-hidden="true"></i></a> 58
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio--item" data-filter="wd">
+              <img src="img/pf02.jpg" alt="">
+              <div class="portfolio--item-desc">
+                <strong class="portfolio--item-desc-title">Clean night sky</strong>
+                <strong class="portfolio--item-desc-category">photography </strong>
+                <div class="portfolio--item-adds">
+                  <div class="portfolio--item-ads-heart">
+                    <a href="#none"><i class="fa fa-heart-o" aria-hidden="true"></i></a> 34
+                  </div>
+                  <div class="portfolio--item-ads-comments">
+                    <a href="#none"><i class="fa fa-comment-o" aria-hidden="true"></i></a> 58
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio--item" data-filter="wd">
+              <img src="img/pf03.jpg" alt="">
+              <div class="portfolio--item-desc">
+                <strong class="portfolio--item-desc-title">Clean night sky</strong>
+                <strong class="portfolio--item-desc-category">photography </strong>
+                <div class="portfolio--item-adds">
+                  <div class="portfolio--item-ads-heart">
+                    <a href="#none"><i class="fa fa-heart-o" aria-hidden="true"></i></a> 34
+                  </div>
+                  <div class="portfolio--item-ads-comments">
+                    <a href="#none"><i class="fa fa-comment-o" aria-hidden="true"></i></a> 58
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio--item" data-filter="pr">
+              <img src="img/pf04.jpg" alt="">
+              <div class="portfolio--item-desc">
+                <strong class="portfolio--item-desc-title">Clean night sky</strong>
+                <strong class="portfolio--item-desc-category">photography </strong>
+                <div class="portfolio--item-adds">
+                  <div class="portfolio--item-ads-heart">
+                    <a href="#none"><i class="fa fa-heart-o" aria-hidden="true"></i></a> 34
+                  </div>
+                  <div class="portfolio--item-ads-comments">
+                    <a href="#none"><i class="fa fa-comment-o" aria-hidden="true"></i></a> 58
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio--item" data-filter="ui">
+              <img src="img/pf05.jpg" alt="">
+              <div class="portfolio--item-desc">
+                <strong class="portfolio--item-desc-title">Clean night sky</strong>
+                <strong class="portfolio--item-desc-category">photography </strong>
+                <div class="portfolio--item-adds">
+                  <div class="portfolio--item-ads-heart">
+                    <a href="#none"><i class="fa fa-heart-o" aria-hidden="true"></i></a> 34
+                  </div>
+                  <div class="portfolio--item-ads-comments">
+                    <a href="#none"><i class="fa fa-comment-o" aria-hidden="true"></i></a> 58
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio--item" data-filter="ph">
+              <img src="img/pf06.jpg" alt="">
+              <div class="portfolio--item-desc">
+                <strong class="portfolio--item-desc-title">Clean night sky</strong>
+                <strong class="portfolio--item-desc-category">photography </strong>
+                <div class="portfolio--item-adds">
+                  <div class="portfolio--item-ads-heart">
+                    <a href="#none"><i class="fa fa-heart-o" aria-hidden="true"></i></a> 34
+                  </div>
+                  <div class="portfolio--item-ads-comments">
+                    <a href="#none"><i class="fa fa-comment-o" aria-hidden="true"></i></a> 58
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio--item" data-filter="ph">
+              <img src="img/pf07.jpg" alt="">
+              <div class="portfolio--item-desc">
+                <strong class="portfolio--item-desc-title">Clean night sky</strong>
+                <strong class="portfolio--item-desc-category">photography </strong>
+                <div class="portfolio--item-adds">
+                  <div class="portfolio--item-ads-heart">
+                    <a href="#none"><i class="fa fa-heart-o" aria-hidden="true"></i></a> 34
+                  </div>
+                  <div class="portfolio--item-ads-comments">
+                    <a href="#none"><i class="fa fa-comment-o" aria-hidden="true"></i></a> 58
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio--item" data-filter="pr">
+              <img src="img/pf08.jpg" alt="">
+              <div class="portfolio--item-desc">
+                <strong class="portfolio--item-desc-title">Clean night sky</strong>
+                <strong class="portfolio--item-desc-category">photography </strong>
+                <div class="portfolio--item-adds">
+                  <div class="portfolio--item-ads-heart">
+                    <a href="#none"><i class="fa fa-heart-o" aria-hidden="true"></i></a> 34
+                  </div>
+                  <div class="portfolio--item-ads-comments">
+                    <a href="#none"><i class="fa fa-comment-o" aria-hidden="true"></i></a> 58
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- AJAX CALL SYMULATE -->
+            <div class="portfolio--item portfolio--item__not-loaded" data-filter="ph">
+              <img src="img/pf09.jpg" alt="">
+              <div class="portfolio--item-desc">
+                <strong class="portfolio--item-desc-title">Clean night sky</strong>
+                <strong class="portfolio--item-desc-category">photography </strong>
+                <div class="portfolio--item-adds">
+                  <div class="portfolio--item-ads-heart">
+                    <a href="#none"><i class="fa fa-heart-o" aria-hidden="true"></i></a> 34
+                  </div>
+                  <div class="portfolio--item-ads-comments">
+                    <a href="#none"><i class="fa fa-comment-o" aria-hidden="true"></i></a> 58
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio--item portfolio--item__not-loaded" data-filter="ui">
+              <img src="img/pf10.jpg" alt="">
+              <div class="portfolio--item-desc">
+                <strong class="portfolio--item-desc-title">Clean night sky</strong>
+                <strong class="portfolio--item-desc-category">photography </strong>
+                <div class="portfolio--item-adds">
+                  <div class="portfolio--item-ads-heart">
+                    <a href="#none"><i class="fa fa-heart-o" aria-hidden="true"></i></a> 34
+                  </div>
+                  <div class="portfolio--item-ads-comments">
+                    <a href="#none"><i class="fa fa-comment-o" aria-hidden="true"></i></a> 58
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio--item portfolio--item__not-loaded" data-filter="pr">
+              <img src="img/pf11.jpg" alt="">
+              <div class="portfolio--item-desc">
+                <strong class="portfolio--item-desc-title">Clean night sky</strong>
+                <strong class="portfolio--item-desc-category">photography </strong>
+                <div class="portfolio--item-adds">
+                  <div class="portfolio--item-ads-heart">
+                    <a href="#none"><i class="fa fa-heart-o" aria-hidden="true"></i></a> 34
+                  </div>
+                  <div class="portfolio--item-ads-comments">
+                    <a href="#none"><i class="fa fa-comment-o" aria-hidden="true"></i></a> 58
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio--item portfolio--item__not-loaded" data-filter="ph">
+              <img src="img/pf12.jpg" alt="">
+              <div class="portfolio--item-desc">
+                <strong class="portfolio--item-desc-title">Clean night sky</strong>
+                <strong class="portfolio--item-desc-category">photography </strong>
+                <div class="portfolio--item-adds">
+                  <div class="portfolio--item-ads-heart">
+                    <a href="#none"><i class="fa fa-heart-o" aria-hidden="true"></i></a> 34
+                  </div>
+                  <div class="portfolio--item-ads-comments">
+                    <a href="#none"><i class="fa fa-comment-o" aria-hidden="true"></i></a> 58
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div id="js-portfolio-spinner" class="portfolio--spinner" style="display: none">
+              <i class="fa fa-spinner fa-spin fa-3x fa-fw"></i>
+              <span class="sr-only">Loading...</span>
+            </div>
+
+            <p>
+              <a id="js-portfolio-load-btn" class="portfolio--load-btn" href="#more">
+                Load more <br> <img src="img/arrow.png" alt="">
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- PRICING TABLE -->
-  <section>
+  <section id="pricing">
     <h2 class="sr-only">Pricing Table</h2>
 
-    <div>
-      <p>Pricing table</p>
-      <p>Clean beautiful flat table</p>
+    <!-- baner -->
+    <div id="banner02" class="banner">
+      <div class="container">
+        <div class="row">
+          <div class="banner--content">
+            <p class="banner--primary-text">Pricing table</p>
+            <p class="banner--secondary-text">Clean beautiful flat table</p>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div>
-      <section>
-        <h3>Our Price</h3>
+    <!-- offert -->
+    <div class="container">
+      <section class="price-tables row">
+        <h3 class="heading-primary">Our Price</h3>
 
-        <div class="price-table__price-box--big"></div>
-        <div class="price-table__price-box--big"></div>
-        <div class="price-table__price-box--big"></div>
-        <div class="price-table__price-box--small"></div>
-        <div class="price-table__price-box--small"></div>
-        <div class="price-table__price-box--small"></div>
-        <div class="price-table__price-box--small"></div>
+        <div class="priceboxes">
+          <div class="pricebox">
+            <strong class="pricebox--header">Website hosting</strong>
+            <span class="pricebox--price">$10/month</span>
+            <div class="pricebox--options">
+              <p class="pricebox--option"><span class="pricebox--option-hl">2x </span>Option 1</p>
+              <p class="pricebox--option"><span class="pricebox--option-hl">Free </span>Option 2</p>
+              <p class="pricebox--option"><span class="pricebox--option-hl">Unlimited </span>Option 3</p>
+              <p class="pricebox--option"><span class="pricebox--option-hl">Unlimited </span>Option 4</p>
+              <p class="pricebox--option"><span class="pricebox--option-hl">1x </span>Option 5</p>
+            </div>
+            <a href="#" class="btn">Purchaise</a>
+          </div>
+          <div class="pricebox">
+            <strong class="pricebox--header">Website hosting</strong>
+            <span class="pricebox--price">$10/month</span>
+            <div class="pricebox--options">
+              <p class="pricebox--option"><span class="pricebox--option-hl">2x </span>Option 1</p>
+              <p class="pricebox--option"><span class="pricebox--option-hl">Free </span>Option 2</p>
+              <p class="pricebox--option"><span class="pricebox--option-hl">Unlimited </span>Option 3</p>
+              <p class="pricebox--option"><span class="pricebox--option-hl">Unlimited </span>Option 4</p>
+              <p class="pricebox--option"><span class="pricebox--option-hl">1x </span>Option 5</p>
+            </div>
+            <a href="#" class="btn">Purchaise</a>
+          </div>
+          <div class="pricebox">
+            <strong class="pricebox--header">Website hosting</strong>
+            <span class="pricebox--price">$10/month</span>
+            <div class="pricebox--options">
+              <p class="pricebox--option"><span class="pricebox--option-hl">2x </span>Option 1</p>
+              <p class="pricebox--option"><span class="pricebox--option-hl">Free </span>Option 2</p>
+              <p class="pricebox--option"><span class="pricebox--option-hl">Unlimited </span>Option 3</p>
+              <p class="pricebox--option"><span class="pricebox--option-hl">Unlimited </span>Option 4</p>
+              <p class="pricebox--option"><span class="pricebox--option-hl">1x </span>Option 5</p>
+            </div>
+            <a href="#" class="btn">Purchaise</a>
+          </div>
+        </div>
+        <div class="priceboxes">
+          <div class="pricebox pricebox__small">
+            <strong class="pricebox--header pricebox--header__alt">Website hosting</strong>
+            <span class="pricebox--price pricebox--price__alt">$10/month</span>
+            <div class="pricebox--options">
+              <p class="pricebox--option"><span class="pricebox--option-hl">2x </span>Option 1</p>
+              <p class="pricebox--option"><span class="pricebox--option-hl">Free </span>Option 2</p>
+              <p class="pricebox--option"><span class="pricebox--option-hl">Unlimited </span>Option 3</p>
+              <p class="pricebox--option"><span class="pricebox--option-hl">Unlimited </span>Option 4</p>
+              <p class="pricebox--option"><span class="pricebox--option-hl">1x </span>Option 5</p>
+            </div>
+            <a href="#" class="btn pricebox--button__alt">Purchaise</a>
+          </div>
+          <div class="pricebox pricebox__small">
+            <strong class="pricebox--header pricebox--header__alt">Website hosting</strong>
+            <span class="pricebox--price pricebox--price__alt">$10/month</span>
+            <div class="pricebox--options">
+              <p class="pricebox--option"><span class="pricebox--option-hl">2x </span>Option 1</p>
+              <p class="pricebox--option"><span class="pricebox--option-hl">Free </span>Option 2</p>
+              <p class="pricebox--option"><span class="pricebox--option-hl">Unlimited </span>Option 3</p>
+              <p class="pricebox--option"><span class="pricebox--option-hl">Unlimited </span>Option 4</p>
+              <p class="pricebox--option"><span class="pricebox--option-hl">1x </span>Option 5</p>
+            </div>
+            <a href="#" class="btn pricebox--button__alt">Purchaise</a>
+          </div>
+          <div class="pricebox pricebox__small">
+            <strong class="pricebox--header pricebox--header__alt">Website hosting</strong>
+            <span class="pricebox--price pricebox--price__alt">$10/month</span>
+            <div class="pricebox--options">
+              <p class="pricebox--option"><span class="pricebox--option-hl">2x </span>Option 1</p>
+              <p class="pricebox--option"><span class="pricebox--option-hl">Free </span>Option 2</p>
+              <p class="pricebox--option"><span class="pricebox--option-hl">Unlimited </span>Option 3</p>
+              <p class="pricebox--option"><span class="pricebox--option-hl">Unlimited </span>Option 4</p>
+              <p class="pricebox--option"><span class="pricebox--option-hl">1x </span>Option 5</p>
+            </div>
+            <a href="#" class="btn pricebox--button__alt">Purchaise</a>
+          </div>
+          <div class="pricebox pricebox__small">
+            <strong class="pricebox--header pricebox--header__alt">Website hosting</strong>
+            <span class="pricebox--price pricebox--price__alt">$10/month</span>
+            <div class="pricebox--options">
+              <p class="pricebox--option"><span class="pricebox--option-hl">2x </span>Option 1</p>
+              <p class="pricebox--option"><span class="pricebox--option-hl">Free </span>Option 2</p>
+              <p class="pricebox--option"><span class="pricebox--option-hl">Unlimited </span>Option 3</p>
+              <p class="pricebox--option"><span class="pricebox--option-hl">Unlimited </span>Option 4</p>
+              <p class="pricebox--option"><span class="pricebox--option-hl">1x </span>Option 5</p>
+            </div>
+            <a href="#" class="btn pricebox--button__alt">Purchaise</a>
+          </div>
+        </div>
       </section>
 
+      <!-- blockquote -->
       <section>
-        <h3>Clients About Us</h3>
-        <blockquote>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias assumenda commodi culpa cupiditate delectus
-          esse et, eveniet expedita facere fugiat harum illo labore laborum libero natus nemo officia omnis provident,
-          quas qui quisquam quo tenetur totam ullam, unde! Accusantium asperiores atque aut autem corporis dignissimos
-          ducimus fuga ipsam iusto magnam minima, molestias mollitia nesciunt numquam obcaecati odio odit officia quod
-          recusandae sapiente sed velit voluptatem? Corporis distinctio doloremque dolores eos eveniet itaque officiis
-          quasi voluptatibus! Fuga fugit laborum necessitatibus optio sit tempore. A consequatur, consequuntur culpa
-          doloremque eius eveniet exercitationem laudantium magnam numquam, officia quae, quos reiciendis rerum sunt
-          totam.
+        <h3 class="heading-secondary">Clients About Us</h3>
+        <blockquote class="bq">
+          <img src="img/bq01.png" class="bq--icon">
+          <div class="bq--content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias assumenda commodi culpa cupiditate delectus
+            esse et, eveniet expedita facere fugiat harum illo labore laborum libero natus nemo officia omnis provident,
+            quas qui quisquam quo tenetur totam ullam, unde! Accusantium asperiores atque aut autem corporis.
+          </div>
+          <img src="img/bq02.png" class="bq--icon">
+          <p class="bq--author">#PAUL GAWLAS</p>
         </blockquote>
       </section>
     </div>
   </section>
 
   <!-- OUR TEAM -->
-  <section>
+  <section id="aboutus">
     <h2 class="sr-only">Our Team</h2>
 
-    <div>
-      <p>Out team</p>
-      <p>We're a professional and progressive team</p>
+    <!-- banner -->
+    <div id="banner03" class="banner">
+      <div class="container">
+        <div class="row">
+          <div class="banner--content">
+            <p class="banner--primary-text">Our team</p>
+            <p class="banner--secondary-text">We're a professional and progressive team</p>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- team -->
-    <section>
-      <h3>About Us</h3>
-      <ul>
-        <li>
-          <h4>Mark Cream</h4>
-          <span>Developer</span>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae dolores saepe soluta. Commodi, dignissimos
-            id iusto omnis similique sit sunt. Ab dolore excepturi fugiat id impedit itaque, maxime rem repudiandae.</p>
-        </li>
-        <li>
-          <h4>Antonio Paramo</h4>
-          <span>Fire Effects</span>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta dignissimos itaque non possimus quo saepe,
-            tenetur! Culpa esse, id illo itaque maxime, quisquam quod rem repellat repudiandae similique sunt vel! Ea
-            nesciunt rerum veritatis voluptatem!</p>
-        </li>
-        <li>
-          <h4>Mario Ballote</h4>
-          <span>Big Boss</span>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad beatae consequatur consequuntur ducimus
-            expedita fugit non perspiciatis porro quas voluptas.</p>
-        </li>
-        <li>
-          <h4>Ben Bugatton</h4>
-          <span>Designer</span>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid amet blanditiis culpa delectus eveniet
-            harum, illo iusto officia pariatur voluptates! Maxime, saepe!</p>
-        </li>
-      </ul>
-    </section>
+    <div class="container">
+      <section class="row">
+        <h3 class="heading-primary">About Us</h3>
+        <div class="team-list">
+          <div class="team-list--member col-sm-6 col-lg-3">
+            <img src="img/person01.jpg" class="team-list--img" alt="">
+            <h4 class="team-list--name">Mark Cream</h4>
+            <span class="team-list--pos">Developer</span>
+            <p class="team-list--desc">
+              ipsum dolor sit amet, consectetur adipisicing elit. Beatae dolores saepe soluta. Commodi, dignissimos id
+              iusto omnis similique sit sunt. Ab dolore excepturi fugiat id impedit itaque, maxime rem repudiandae.
+            </p>
+          </div>
+          <div class="team-list--member col-sm-6 col-lg-3">
+            <img src="img/person02.jpg" class="team-list--img" alt="">
+            <h4 class="team-list--name">Elena Paramo</h4>
+            <span class="team-list--pos">Fire Effects</span>
+            <p class="team-list--desc">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta dignissimos itaque non possimus quo saepe,
+              tenetur! Culpa esse, id illo itaque maxime, quisquam quod rem repellat repudiandae similique sunt vel! Ea
+              nesciunt rerum veritatis voluptatem!
+            </p>
+          </div>
+          <div class="team-list--member col-sm-6 col-lg-3">
+            <img src="img/person03.jpg" class="team-list--img" alt="">
+            <h4 class="team-list--name">Maria Ballote</h4>
+            <span class="team-list--pos">Big Boss</span>
+            <p class="team-list--desc">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad beatae consequatur consequuntur ducimus
+              expedita fugit non perspiciatis porro quas voluptas.
+            </p>
+          </div>
+          <div class="team-list--member col-sm-6 col-lg-3">
+            <img src="img/person04.jpg" class="team-list--img" alt="">
+            <h4 class="team-list--name">Ben Bugatton</h4>
+            <span class="team-list--pos">Designer</span>
+            <p class="team-list--desc">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid amet blanditiis culpa delectus eveniet
+              harum, illo iusto officia pariatur voluptates! Maxime, saepe!
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
 
     <!-- skills -->
-    <section>
-      <h3>Our Skills</h3>
-      <p>Web-Design</p>
-      <p>Creative</p>
-      <p>UI-Design</p>
-      <p>Prototype</p>
-      <p>Photography</p>
-    </section>
+    <div class="container">
+      <div class="row">
+        <section>
+          <h3 class="heading-secondary">Our Skills</h3>
+          <div class="charts col-12">
+            <div class="charts--item">
+              <img class="charts--chart" src="img/chart01.png" alt="">
+              <div class="charts--caption">
+                <p class="charts--procentage">35%</p>
+                <p class="charts--heading">Web-Design</p>
+              </div>
+            </div>
+            <div class="charts--item">
+              <img class="charts--chart" src="img/chart02.png" alt="">
+              <div class="charts--caption">
+                <p class="charts--procentage">85%</p>
+                <p class="charts--heading">Creative</p>
+              </div>
+            </div>
+            <div class="charts--item">
+              <img class="charts--chart" src="img/chart03.png" alt="">
+              <div class="charts--caption">
+                <p class="charts--procentage">95%</p>
+                <p class="charts--heading">UI-Design</p>
+              </div>
+            </div>
+            <div class="charts--item">
+              <img class="charts--chart" src="img/chart04.png" alt="">
+              <div class="charts--caption">
+                <p class="charts--procentage">25%</p>
+                <p class="charts--heading">Prototypes</p>
+              </div>
+            </div>
+            <div class="charts--item">
+              <img class="charts--chart" src="img/chart05.png" alt="">
+              <div class="charts--caption">
+                <p class="charts--procentage">50%</p>
+                <p class="charts--heading">Photography</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
   </section>
 
   <!-- BANNER -->
-  <section>
+  <section id="some_banner">
     <h2 class="sr-only">Banner</h2>
-    <div>
-      <p>You looked over 6000px</p>
-      <p>That's Great</p>
+    <div id="banner04" class="banner">
+      <div class="container">
+        <div class="row">
+          <div class="banner--content">
+            <p class="banner--primary-text">You looked over 6000px</p>
+            <p class="banner--secondary-text">That's Great</p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- CONTACT US -->
-  <section>
-    <h2>Contact Us</h2>
+  <section id="contactus" class="contact">
+    <h2 class="heading-primary">Contact Us</h2>
 
-    <!-- mail -->
-    <section>
-      <h3>Mail</h3>
-      <form action="">
-        <input type="text">
-        <input type="email">
-        <textarea name="" id="" cols="30" rows="10"></textarea>
-        <button type="submit"></button>
-      </form>
-    </section>
 
-    <!-- contact info -->
-    <section>
-      <h3>More Info</h3>
-      <address>
-        <p>2 (555) 888 555 03 20</p>
-        <p>info@domain.com</p>
-        <p>skype: username</p>
-        <br>
-        <p>Jonh Dowl</p>
-        <p>Salt Talke city, UT</p>
-        <p>87550</p>
-      </address>
-      <button type="button"></button>
-    </section>
+    <div class="container">
+      <div class="row">
+        <!-- mail -->
+        <section class="col-xs-12 col-md-9">
+          <h3 class="contact--heading">Mail</h3>
+          <form action="">
+            <div class="col-sm-6 contact--input-wraper contact--input-wraper__st">
+              <input type="text" placeholder="Name">
+            </div>
+            <div class="col-sm-6 contact--input-wraper contact--input-wraper__nd">
+              <input type="email" placeholder="Mail">
+            </div>
+            <div class="contact--textarea-wraper col-12">
+              <textarea name="" id="" cols="28" rows="8" placeholder="Message"></textarea>
+            </div>
+            <a href="#" class="btn contact--button">Submit</a>
+          </form>
+        </section>
+
+        <!-- contact info -->
+        <section class="col-xs-12 col-md-3">
+          <h3 class="contact--heading">More Info</h3>
+          <address class="row contact--address">
+            <div class="col-xs-12 col-sm-6 col-md-12"><p>2 (555) 888 555 03 20</p>
+              <p>info@domain.com</p>
+              <p>skype: username</p>
+              <br></div>
+            <div class="col-xs-12 col-sm-6 col-md-12"><p>Jonh Dowl</p>
+              <p>Salt Talke city, UT</p>
+              <p>87550</p></div>
+          </address>
+          <a href="#" class="btn contact--more-button">Purchaise</a>
+        </section>
+      </div>
+    </div>
   </section>
 
-  <!-- Social Media -->
-  <section>
+  <!-- SOCIAL MEDIA -->
+  <section id="socialmedia">
     <h2 class="sr-only">Social Media</h2>
-    <div>
-      <p>Connect with us</p>
-      <p>Follow Us On Social Networks</p>
 
-      <!-- social media links -->
-      <nav>
-        <h3 class="sr-only">Social Media Links</h3>
-        <ul>
-          <li><i>1</i></li>
-          <li><i>2</i></li>
-          <li><i>3</i></li>
-          <li><i>4</i></li>
-          <li><i>5</i></li>
-          <li><i>6</i></li>
-          <li><i>7</i></li>
-          <li><i>8</i></li>
-        </ul>
-      </nav>
+    <div id="banner05" class="banner">
+      <div class="container">
+        <div class="row">
+          <div class="banner--content">
+            <p class="banner--primary-text">Connect with us</p>
+            <p class="banner--secondary-text">Follow Us On Social Networks</p>
+
+            <!-- social media links -->
+            <!-- ... -->
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- BIG FOOTER -->
-  <section>
+  <section id="bigfooter">
     <h2 class="sr-only">Big Footer</h2>
 
-    <!-- Tweets -->
-    <section>
-      <h3>Recent Tweets</h3>
-      <section>
-        <h4>
-          booty, 15, 10, 2014
-        </h4>
-        <div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus assumenda atque culpa, doloribus
-            eligendi eveniet ex excepturi fuga fugiat laborum maiores porro quibusdam reiciendis suscipit tempora ullam
-            ut vel vitae?</p>
+    <div class="container">
+      <div class="row bfooter">
+        <!-- Tweets -->
+        <div class="col-lg-4 col-md-6">
+          <section class="bfooter--section">
+            <h3 class="bfooter--heading">Recent Tweets</h3>
+            <section>
+              <h4 class="bfooter--secondary-heading">
+                booty, 15, 10, 2014
+              </h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus assumenda atque culpa, doloribus
+                eligendi
+              </p>
+            </section>
+            <section>
+              <h4 class="bfooter--secondary-heading">
+                gawlas, 03, 12, 2014
+              </h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur assumenda enim eum fugit
+                pariatur veniam?
+              </p>
+            </section>
+          </section>
         </div>
-      </section>
-      <section>
-        <h4>
-          gawlas, 03, 12, 2014
-        </h4>
-        <div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur assumenda enim eum fugit pariatur
-            veniam?</p>
-        </div>
-      </section>
-    </section>
 
-    <!-- Posts -->
-    <section>
-      <h3>Recent Posts</h3>
-      <section>
-        <h4>15, 10, 2014</h4>
-        <div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, reprehenderit?</p>
+        <!-- Posts -->
+        <div class="col-lg-4 col-md-6">
+          <section class="bfooter--section">
+            <h3 class="bfooter--heading">Recent Posts</h3>
+            <section>
+              <h4 class="bfooter--secondary-heading">15, 10, 2014</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, reprehenderit?
+              </p>
+            </section>
+            <section>
+              <h4 class="bfooter--secondary-heading">03, 12, 2014</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur assumenda enim eum fugit
+                pariatur veniam?
+              </p>
+            </section>
+            <section>
+              <h4 class="bfooter--secondary-heading">27, 12, 2014</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas.
+              </p>
+            </section>
+          </section>
         </div>
-      </section>
-      <section>
-        <h4>03, 12, 2014</h4>
-        <div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur assumenda enim eum fugit pariatur
-            veniam?</p>
-        </div>
-      </section>
-      <section>
-        <h4>27, 12, 2014</h4>
-        <div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas.</p>
-        </div>
-      </section>
-    </section>
 
-    <!-- Photos -->
-    <section>
-      <h3>Photo Stream</h3>
-      <ul>
-        <li><img src="" alt=""></li>
-        <li><img src="" alt=""></li>
-        <li><img src="" alt=""></li>
-        <li><img src="" alt=""></li>
-        <li><img src="" alt=""></li>
-        <li><img src="" alt=""></li>
-        <li><img src="" alt=""></li>
-        <li><img src="" alt=""></li>
-        <li><img src="" alt=""></li>
-        <li><img src="" alt=""></li>
-      </ul>
-    </section>
+        <!-- Photos -->
+        <div class="col-lg-4 col-md-12">
+          <section class="bfooter--section">
+            <h3 class="bfooter--heading">Photo Stream</h3>
+            <div class="photo-list">
+              <a href="#none"><img src="img/pic01.jpg" alt="" class="photo-list--item"></a>
+              <a href="#none"><img src="img/pic01.jpg" alt="" class="photo-list--item"></a>
+              <a href="#none"><img src="img/pic01.jpg" alt="" class="photo-list--item"></a>
+              <a href="#none"><img src="img/pic01.jpg" alt="" class="photo-list--item"></a>
+              <a href="#none"><img src="img/pic01.jpg" alt="" class="photo-list--item"></a>
+              <a href="#none"><img src="img/pic01.jpg" alt="" class="photo-list--item"></a>
+              <a href="#none"><img src="img/pic01.jpg" alt="" class="photo-list--item"></a>
+              <a href="#none"><img src="img/pic01.jpg" alt="" class="photo-list--item"></a>
+              <a href="#none"><img src="img/pic01.jpg" alt="" class="photo-list--item"></a>
+              <a href="#none"><img src="img/pic01.jpg" alt="" class="photo-list--item"></a>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- FOOTER -->
-  <footer>
+  <footer class="footer">
     <h2 class="sr-only">Footer</h2>
 
-    <!-- brand logo -->
-    <header>
-      <img src="img/logo.png" alt="">
-      <p>Parallels</p>
-    </header>
+    <div class="container">
+      <div class="row"><!-- brand logo -->
+        <header class="footer--header">
+          <img class="footer--image" src="img/logo.png" alt="">
+          <p class="footer--brand">Parallels</p>
+        </header>
 
-    <!-- contact info -->
-    <div>
-      <p>2 (555) 888 555 03 20</p>
-      <p>info@domain.com</p>
-      <p>skype: username</p>
+        <!-- contact info -->
+        <div class="footer--contact">
+          <p class="footer--text footer--text__sm-hidden">2 (555) 888 555 03 20</p>
+          <p class="footer--text">info@domain.com</p>
+          <p class="footer--text footer--text__sm-hidden">skype: username</p>
+        </div>
+      </div>
     </div>
   </footer>
+
+  <!-- SCRIPTS -->
+  <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+  <script src="js/scroller.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/g_filter.js"></script>
+  <script src="js/portfolio.js"></script>
 </body>
 </html>

@@ -1,0 +1,43 @@
+/* BLOCKQUOTE */
+
+.bq
+  text-align: center
+  margin-bottom: 100px
+
+.bq--icon
+  margin-bottom: 30px
+
+.bq--content
+  display: inline-block
+  width: 600px
+  padding: 10px 30px
+  color: #717171
+  font-size: 16px
+  line-height: 1.5em
+
+.bq--author
+  font-weight: bold
+  color: #b0cd3b
+
+@media screen and (max-width: 992px)
+  .bq--content
+    width: 400px
+
+  .bq--icon
+    margin-bottom: 60px
+
+
+@media screen and (max-width: 768px)
+  .bq--icon
+    display: none
+  .bq--content
+    width: 90%
+  .bq--content:after
+    content: '"'
+  .bq--content:before
+    content: '"'
+
+@media screen and (max-width: 768px)
+  .bq--content
+    width: 100%
+    padding: 10px 0px

@@ -1,0 +1,85 @@
+/* JUMBOTRON */
+
+.jumbotron
+  height: 590px
+  background: url(../img/bg01.jpg) no-repeat center center
+  background-size: cover
+
+.jumbotron--container
+  padding: 20px
+  position: relative
+  height: 100%
+
+.jumbotron--icons
+  position: absolute
+  bottom: -100px
+  right: 0
+
+.jumbotron--content
+  margin-top: 230px
+  margin-left: 20px
+  color: #ffffff
+  max-width: 70%
+
+.jumbotron--primary-text
+  margin: 0
+  font-weight: 300
+  font-size: 60px
+
+.jumbotron--secondary-text
+  margin: 0
+  font-weight: 400
+  font-size: 40px
+
+@media screen and (max-width: 1200px)
+  .jumbotron--primary-text
+    font-size: 55px
+
+  .jumbotron--secondary-text
+    font-size: 35px
+
+
+@media screen and (max-width: 992px)
+  .jumbotron--icons
+    display: none
+
+  .jumbotron--content
+    max-width: 40%
+
+@media screen and (max-width: 768px)
+  .jumbotron--content
+    max-width: 50%
+
+  .jumbotron--primary-text
+    font-size: 40px
+
+  .jumbotron--secondary-text
+    font-size: 30px
+
+@media screen and (max-width: 576px)
+  .jumbotron
+    height: 500px
+
+  .jumbotron--content
+    margin-top: 180px
+    max-width: 60%
+
+  .jumbotron--primary-text
+    font-size: 40px
+
+  .jumbotron--secondary-text
+    font-size: 30px
+
+@media screen and (max-width: 400px)
+  .jumbotron
+    height: 400px
+
+  .jumbotron--content
+    margin-top: 140px
+    max-width: 70%
+
+  .jumbotron--primary-text
+    font-size: 30px
+
+  .jumbotron--secondary-text
+    font-size: 26px

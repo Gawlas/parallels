@@ -1,0 +1,112 @@
+.portfolio--menu
+  width: 70%
+  display: block
+  margin: 20px auto
+  text-align: center
+
+.portfolio--button
+  background-color: #ececec
+  border: 0
+  border-radius: 0
+  color: #515151
+
+.portfolio--button:hover
+  background-color: #cccccc
+  border: 0
+  border-radius: 0
+
+.js-filter-active
+  background-color: #1bbc9d
+  border-bottom: 3px solid #1f937d
+
+.js-filter-active:hover
+  background-color: #169980
+  border-bottom: 3px solid #176e5e
+
+@media screen and (max-width: 500px)
+  .portfolio--button
+    display: block
+    width: 80%
+    margin: 10px auto
+
+.portfolio--items
+  display: block
+  margin: 60px 0
+  text-align: center
+
+.portfolio--item
+  position: relative
+  display: inline-block
+  width: 250px
+  margin: 5px
+
+.portfolio--item img
+  width: 100%
+  height: 100%
+
+.portfolio--item-desc
+  display: none
+  position: absolute
+  top: 0
+  left: 0
+  background-color: rgba(0, 0, 0, 0.7)
+  z-index: 10
+  width: 200px
+  height: 200px
+  margin: 25px
+
+.portfolio--item:hover .portfolio--item-desc
+  display: block
+
+.portfolio--load-btn
+  display: inline-block
+  margin-top: 40px
+  font-size: 18px
+  text-decoration: none
+  color: #515151
+
+.portfolio--load-btn:hover
+  color: #3f3f3f
+
+.portfolio--item-desc-title
+  display: block
+  margin-top: 40px
+  color: white
+  font-weight: 400
+  font-size: 18px
+
+.portfolio--item-desc-category
+  display: block
+  color: white
+  margin-top: 10px
+  font-weight: 300
+  font-size: 14px
+
+.portfolio--item-adds
+  display: block
+  color: white
+  margin-top: 60px
+  margin-right: 20px
+  margin-left: 20px
+  font-weight: 300
+  font-size: 18px
+
+.portfolio--item-adds a
+  color: inherit
+  text-decoration: none
+
+.portfolio--item-ads-comments
+  width: 30%
+  float: right
+
+.portfolio--item-ads-heart
+  width: 30%
+  float: left
+
+.portfolio--spinner
+  margin-top: 50px
+  color: #aaca29
+
+/* sym ajax call */
+.portfolio--item__not-loaded
+  display: none !important

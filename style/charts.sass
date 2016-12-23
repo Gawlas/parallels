@@ -1,0 +1,47 @@
+/* SKILL CHARTS */
+
+.charts
+  position: relative
+  margin: 50px 0 100px 0
+  padding: 0
+
+.charts--item
+  box-sizing: border-box
+  width: 20%
+  float: left
+  text-align: center
+
+.charts--caption
+  position: relative
+  top: -26px
+  margin: 0
+  padding: 0
+  color: #424242
+
+.charts--procentage
+  margin: 0
+  font-weight: bold
+  font-size: 24px
+
+.charts--heading
+  margin: 15px 0 0 0
+  font-size: 16px
+
+@media screen and (max-width: 992px)
+  .charts
+    text-align: center
+
+  .charts--item
+    position: static
+    float: none
+    display: inline-block
+    margin-top: 30px
+    width: 30%
+
+@media screen and (max-width: 768px)
+  .charts--item
+    width: 40%
+
+@media screen and (max-width: 480px)
+  .charts--item
+    width: 80%
