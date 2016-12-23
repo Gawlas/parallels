@@ -1,6 +1,7 @@
 function scroller() {
   // PRIVATE
   ////////////////////////////////////////////////////////////
+
   var didScroll = false;
   var events = [];
   var doc = document.documentElement;
@@ -9,16 +10,24 @@ function scroller() {
     return /^-?[\d.]+(?:e-?\d+)?$/.test(n);
   };
 
-  var scrollPosition = function() {
+  var scrollPosition = function () {
     return (window.pageYOffset || doc.scrollTop) - (doc.clientTop || 0);
   };
 
   var onScroll = function () {
     events.forEach(function scroller_forEach(event) {
-      if (scrollPosition() > event.from && scrollPosition() < event.to) {
-        event.selector.addClass(event.className)
-      } else {
-        event.selector.removeClass(event.className);
+      // call callback
+      if(typeof event.callback !== "undefined") {
+        event.callback();
+      }
+
+      // set or remove class
+      if(typeof event.selector !== "undefined") {
+        if (scrollPosition() > event.from && scrollPosition() < event.to) {
+          event.selector.addClass(event.className)
+        } else {
+          event.selector.removeClass(event.className);
+        }
       }
     });
   };
@@ -26,9 +35,9 @@ function scroller() {
   // API FUNCTIONS
   ////////////////////////////////////////////////////////////
 
-  //Function init()
-  //Parameters:
-  //  interval: interval (in ms) of checking scroll event
+  // Function init()
+  // Parameters:
+  //   interval: interval (in ms) of checking scroll event
   var init = function (interval) {
     if (!isNumber(interval)) {
       interval = 250;
@@ -48,22 +57,21 @@ function scroller() {
 
   // Function add()
   // Parameters:
-  //  object: js object with values
-  //    selector:
-  //    from:
-  //    to
-  //    className:
+  //   object: js object with values
+  //     selector:
+  //     from:
+  //     to:
+  //     className:
+  //     callback:
   var add = function (object) {
     var obj = {};
 
-    //selector
-    if (object.selector && (typeof object.selector === "string"))
+    //set selector
+    if (object.selector && (typeof object.selector === "string")) {
       obj.selector = $(object.selector);
-    else {
-      console.log("Scroller Error: not selector provided");
     }
 
-    //range
+    // set range
     if (typeof object.from === "number") {
       obj.from = object.from;
     } else {
@@ -76,13 +84,41 @@ function scroller() {
       obj.to = Infinity;
     }
 
-    //class
+    // set class
     if (typeof object.className === "string") {
       obj.className = object.className;
-    } else {
-      console.log("Scroller Error: not class provided");
     }
 
+    // set callback
+    if (typeof callback === "function") {
+      obj.callback = object.callback
+    }
+
+    // Error checking
+    // 1) callback or selector must be provided
+    if (typeof obj.callback === "undefined" && obj.selector === "undefined") {
+      console.log("Scroller Error: selector or callback must be provided");
+      return 1;
+    }
+
+    // 2) when selector provided, className also must be provided and vice versa
+    if (typeof obj.selector === "undefined" && obj.className !== "undefined") {
+      console.log("Scroller Error: className must be provided");
+      return 1;
+    }
+
+    if (typeof obj.selector !== "undefined" && obj.className === "undefined") {
+      console.log("Scroller Error: selector must be provided");
+      return 1;
+    }
+
+    // 3) callback must be a function
+    if(typeof obj.callback !== "function" && typeof callback !== "undefined") {
+      console.log("Scroller Error: callback must be a function");
+      return 1;
+    }
+
+    // push obj to array
     events.push(obj);
   };
 
