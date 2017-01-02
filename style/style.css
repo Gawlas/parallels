@@ -757,6 +757,10 @@ textarea {
 .bfooter--secondary-heading ~ p {
   margin-top: 5px; }
 
+.bfooter--tweeter-icon {
+  font-size: 20px;
+  color: #00aced; }
+
 .photo-list {
   box-sizing: border-box; }
 
